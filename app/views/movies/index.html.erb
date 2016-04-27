@@ -17,7 +17,7 @@
       <tr>
         <td><%= movie.name %></td>
         <td><%= movie.duration %></td>
-        <td><%= movie.photo %></td>
+        <td><%= image_tag(movie.photo) %></td>
         <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
         <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
